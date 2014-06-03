@@ -1,0 +1,45 @@
+ 
+    <table class="table table-stripped prices-table">
+        <thead>
+            <tr>
+                <th>Room</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="repeat-item" ng-repeat="room in rooms track by $index">
+                <td>{{room.name}}</td>
+                <td ng-dblclick="edit(room, $event)">
+                    <span>{{room.price.mon}}</span><input ng-keypress="checkEnter(room, $event)" ng-model="room.price.mon" type="number">
+                </td>
+                <td ng-dblclick="edit(room, $event)">
+                    <span>{{room.price.tue}}</span><input ng-keypress="checkEnter(room, $event)" ng-model="room.price.tue" type="number">
+                </td>
+                <td ng-dblclick="edit(room, $event)">
+                    <span>{{room.price.wed}}</span><input ng-keypress="checkEnter(room, $event)" ng-model="room.price.wed" type="number">
+                </td>
+                <td ng-dblclick="edit(room, $event)">
+                    <span>{{room.price.thu}}</span><input ng-keypress="checkEnter(room, $event)" ng-model="room.price.thu" type="number">
+                </td>
+                <td ng-dblclick="edit(room, $event)">
+                    <span>{{room.price.fri}}</span><input ng-keypress="checkEnter(room, $event)" ng-model="room.price.fri" type="number">
+                </td>
+                <td ng-dblclick="edit(room, $event)">
+                    <span>{{room.price.sat}}</span><input ng-keypress="checkEnter(room, $event)" ng-model="room.price.sat" type="number">
+                </td>
+                <td ng-dblclick="edit(room, $event)">
+                    <span>{{room.price.sun}}</span><input ng-keypress="checkEnter(room, $event)" ng-model="room.price.sun" type="number">
+                </td>
+                <td>
+                    <button class="btn btn-info btn-xs save-btn" ng-click="saveRoom(room, $event)">Save</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>

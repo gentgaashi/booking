@@ -1,0 +1,33 @@
+<div class="room-btns">
+<a href="#/booking/add" class="btn btn-success btn-sm">New</a>  
+</div>
+<table class="table table-striped users-table">
+	<thead>
+		<tr>
+			<th>User</th>
+			<th>Room</th>
+			<th>From</th>
+			<th>To</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="repeat-item" ng-repeat="booking in bookings track by $index">
+			<td class="input-td-username">
+				{{booking.user.username}}
+			</td>
+			<td class="input-td-email">
+				{{booking.room.name}}
+			</td>
+			<td class="input-td-email">
+				{{booking.dateFrom}}
+			</td>
+			<td class="input-td-email">
+				{{booking.dateTo}}
+			</td>
+			<td>
+				<button class="btn btn-danger btn-xs" ng-click="deleteBooking(booking.id)">Delete</button>
+			</td>
+		</tr>
+	</tbody>
+</table>

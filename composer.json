@@ -1,0 +1,16 @@
+{
+	"require" : {
+		"phpunit/phpunit": "4.1.*",
+		"doctrine/orm": "2.3.*",
+		"symfony/serializer": "2.5.*@dev",
+		"slim/slim" : "2.4.*"
+	},
+
+	"autoload": {
+        "psr-0": {"": "src/"}
+    },
+
+    "config":{
+    	"bin-dir": "bin"
+    }
+}

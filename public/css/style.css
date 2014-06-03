@@ -1,0 +1,267 @@
+li
+{
+	list-style: none;
+}
+
+.container
+{
+	padding-left:0 !important;
+}
+
+legend
+{
+  color:#bababa;
+}
+
+
+.clear
+{
+	clear:both;
+}
+
+
+.repeat-item.ng-enter
+{
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+}
+.repeat-item.ng-leave {
+	-webkit-transition:0.3s linear all;
+  transition:0.3s linear all;
+}
+
+
+.repeat-item.ng-enter,
+.repeat-item.ng-leave.ng-leave-active {
+  opacity:0;
+}
+.repeat-item.ng-leave,
+.repeat-item.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.users-table
+{
+	width:700px;
+}
+
+.form-div
+{
+	width:700px;
+}
+
+.form-div .input-div
+{
+	width:205px;
+	float:left;
+	margin-right: 10px;
+}
+
+.view-item.ng-enter  {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+.view-item.ng-leave{
+	-webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+}
+
+.view-item.ng-enter {
+  opacity:0;
+  top:25px;
+  width:100%;
+  position:absolute;
+}
+.view-item.ng-enter.ng-enter-active {
+  top:0;
+  opacity:1;
+}
+
+.view-item.ng-leave {
+  position:absolute;
+  top:0;
+  width:100%;
+  opacity:1;
+}
+.view-item.ng-leave.ng-leave-active {
+  
+  opacity:0;
+}
+.btn
+{
+  font-weight: bold;
+}
+.btn-xs
+{
+	width: 50px;
+}
+
+.repeat-item input[type=text],.repeat-item input[type=number]
+{
+	display:none;
+}
+
+.save-btn
+{
+	display:none;
+}
+
+.nav-div 
+{
+	width:150px;
+}
+
+.nav-div ul li
+{
+	text-align: left;
+	font-weight: bold;
+  border:1px solid #dedede;
+  border-radius:4px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.nav-div ul li:first-child
+{
+  margin-top:0;
+}
+
+.row-1
+{
+	margin-top: 30px;
+}
+
+.input-td-username
+{
+  width:200px;
+}
+
+.input-td-email
+{
+  width:375px;
+}
+
+.ajax-loader
+{
+  margin-left: 320px;
+  margin-top: 100px;
+}
+
+.room-btns
+{
+    margin-bottom:10px;
+}
+
+.room-btns a
+{
+    width:70px;
+}
+
+.rooms-div table td,.rooms-div table th
+{
+    text-align: center;
+}
+
+.add-room-form-div button
+{
+
+}
+.specs-input-div label
+{
+  display:block;
+}
+
+.add-room-form-div .room-specs-div .specs-input-div
+{
+    float:left;
+    margin-right:10px;
+}
+
+.price-input-big-div .price-input-div
+{
+  float:left;
+  margin-right:10px;
+}
+
+.add-room-form-div form input[type=text]
+{
+    width:390px;
+}
+
+.add-room-form-div form input[type=number]
+{
+    width:100px;
+}
+
+.room-specs-div input[type=text]
+{
+  margin-right:38px !important;
+}
+
+.prices-table td input[type=number]
+{
+  width:50px;
+}
+
+.prices-table td span:after
+{
+  content: "$";
+}
+
+.dashboard-container ul li
+{
+  list-style:none;
+  width:200px;
+  height:200px;
+  border:1px solid #ddd;
+  float:left;
+  background: #f9f9f9;
+  margin-right:20px;
+  text-align: center;
+  border-radius:10px;
+}
+.dashboard-container ul li a
+{
+  cursor:pointer;
+  text-decoration: none;
+  height:100%;
+  float:left;
+  width:100%;
+}
+.dashboard-container ul li .dashboard-nr
+{
+  font-size: 60px;
+  margin-top:25px;
+}
+
+.dashboard-container ul li .dashboard-text
+{
+  font-size:30px;
+  color:#bababa;
+}
+
+.search-filter
+{
+  width:200px;
+  display: inline;
+  margin-left:352px;
+}
+
+.add-booking .input-div
+{
+  margin-right:30px;
+  width:250px;
+}
+.add-booking .input-div input,.add-booking .input-div select
+{
+  width:221px;
+}
+
+.errors
+{
+  color:red;
+}

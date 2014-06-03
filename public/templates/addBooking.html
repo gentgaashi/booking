@@ -1,0 +1,43 @@
+<div class="form-div add-booking">
+<fieldset>
+<legend>New Booking</legend>
+
+<form>
+<div class="input-div">
+<label for="booking-user">User:</label>
+	<select ng-options="user.username for user in users" ng-model="booking.user" class='form-control' id="booking-user" name="booking-user" placeholder="User">
+		<option value="">Select User</option>
+	</select>
+</div>
+<div class="input-div">
+<label for="booking-room">Room:</label>
+	<select ng-options="room.name for room in rooms" ng-model="booking.room" class='form-control' id="room-name" name="room-name" placeholder="Room">
+		<option value="">Select Room</option>
+	</select>
+</div>
+<div class="clear"></div><br>
+<div class="input-div">
+<label for="from">From Date:</label>
+	<input ng-model="booking.dateFrom" class='form-control datepicker' type="text" id="from" name="from" placeholder="From Date">
+</div>
+<div class="input-div">
+<label for="to">To Date:</label>
+	<input ng-model="booking.dateTo" class='form-control datepicker' type="text" id="to" name="to" placeholder="To Date">
+</div>
+<div class="clear"></div>
+<br>
+	<button class="btn btn-success" ng-click="addBooking()">Save</button>
+
+</form>
+<h5 class='errors' ng-repeat="error in formError">
+	{{error}}
+</h5>
+</fieldset>
+<div class="clear"></div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$(".datepicker" ).datepicker({showAnim:'show'});
+})
+	
+</script>

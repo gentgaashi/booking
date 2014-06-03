@@ -1,0 +1,63 @@
+<div class="add-room-form-div">
+    <fieldset>
+        <legend>New Room</legend>
+        <form ng-submit="addRoom()">
+            <div class="room-specs-div">
+            
+            <div class="specs-input-div">
+            <label>Name:</label>
+                <input required placeholder="Room Name..." type="text" class="form-control" ng-model="form.name">
+            </div>
+            <div class="specs-input-div">
+            <label>Adults:</label>
+                <input min="1" placeholder=" Adults..." type="number" class="form-control" ng-model="form.adults">
+            </div>
+            <div class="specs-input-div">
+            <label>Children:</label>
+                <input min="1" placeholder="Children..." type="number" class="form-control" ng-model="form.children">
+            </div>
+            <div class="specs-input-div">
+            <label>Count:</label>
+                <input min="1" placeholder="Count..." type="number" class="form-control" ng-model="form.roomCount">
+            </div>
+        </div>
+            <div class="clear"></div><br>
+            <div class="room-prices-div">
+                <h4>Prices:</h4>
+            <div class='price-input-big-div'>
+                <div class='price-input-div'>
+                    <label for="mon">Monday:</label>
+                    <input min="1" id="mon" placeholder="Mon" type="number" class="form-control" ng-model="form.price.mon">
+                </div>
+                <div class='price-input-div'>
+                    <label for="mon">Tuesday:</label>
+                    <input min="1" placeholder="Tue" type="number" class="form-control" ng-model="form.price.tue">
+                    </div>
+                <div class='price-input-div'>
+                    <label for="mon">Wednesday:</label>
+                    <input min="1" placeholder="Wed" type="number" class="form-control" ng-model="form.price.wed">
+                </div>
+                <div class='price-input-div'>
+                    <label for="mon">Thursday:</label>
+                    <input min="1" placeholder="Thu" type="number" class="form-control" ng-model="form.price.thu">
+                </div>
+                <div class='price-input-div'>
+                    <label for="mon">Friday:</label>
+                    <input min="1" placeholder="Fri" type="number" class="form-control" ng-model="form.price.fri">
+                </div>
+                <div class='price-input-div'>
+                    <label for="mon">Saturday:</label>
+                    <input min="1" placeholder="Sat" type="number" class="form-control" ng-model="form.price.sat">
+                </div>
+                <div class='price-input-div'>
+                    <label for="mon">Sunday:</label>
+                    <input min="1" placeholder="Sun" type="number" class="form-control" ng-model="form.price.sun">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <br>
+            <button class='btn btn-success' type="submit">Add</button>
+        </form>
+    </fieldset>
+    <div class="clear"></div>
+</div>

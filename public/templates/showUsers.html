@@ -1,0 +1,23 @@
+<table class="table table-striped users-table">
+	<thead>
+		<tr>
+			<th>Username</th>
+			<th>E-mail</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="repeat-item" ng-repeat="user in users track by $index">
+			<td class="input-td-username" ng-dblclick="edit(user, $event)">
+				<span>{{user.username}}</span>
+				<input ng-keypress="checkEnter(user,$event)" type="text" ng-model="user.username"></td>
+			<td class="input-td-email" ng-dblclick="edit(user, $event)">
+				<span>{{user.email}}</span>
+				<input ng-keypress="checkEnter(user,$event)" type="text"  ng-model="user.email"></td>
+			<td>
+				<button class="btn btn-danger btn-xs" ng-click="deleteUser(user.id)">Delete</button>
+				<button class="btn btn-info btn-xs save-btn" ng-click="saveUser(user, $event)">Save</button>
+			</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,31 @@
+<div class="rooms-div">
+    <div class="room-btns">
+        <a href="#/rooms/add" class="btn btn-success btn-sm">New</a>
+        <a href="#/rooms/prices" class="btn btn-success btn-sm">Prices</a>
+        <input type="text" class="form-control search-filter" placeholder="Filter Rooms..." ng-model="searchFilter">
+    </div>
+    <table class="table table-striped users-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Adults</th>
+                <th>Children</th>
+                <th>Room Count</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="repeat-item" ng-repeat="room in rooms | filter:searchFilter track by $index">
+                <td>{{room.name}}</td>
+                <td>{{room.adults}}</td>
+                <td>{{room.children}}</td>
+                <td>{{room.roomCount}}</td>
+                <td class="action-btns">
+                	<button class="btn btn-danger btn-xs" ng-click="deleteRoom(room.id)">Delete</button>
+                	<a class="btn btn-info btn-xs" ng-href="#/rooms/edit/{{room.id}}/">Edit</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
